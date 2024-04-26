@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Latihan1</string>
+    <string name="login">halaman login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome_message">Hallo Selamat datang kembali</string>
+    <string name="desc_welcome">Kami sangat senang bertemu kembali</string>
+    <string name="hit_username">Username atau Email</string>
+    <string name="hit_password">Password</string>
+    <string name="tidak_memiliki_akun">Tidak memiliki akun?</string>
+    <string name="sign_up_sekarang">Sign Up Sekarang !</string>
+    <string name="hallo">Hallo !</string>
+    <string name="signup_desc">Buat akun baru</string>
+    <string name="fullname">Fullname</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sudah_memiliki_akun">Sudah memiliki akun</string>
+</resources>
