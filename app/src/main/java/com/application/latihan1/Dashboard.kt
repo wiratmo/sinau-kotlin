@@ -1,38 +1,26 @@
 package com.application.latihan1
 
-import android.content.Intent
+
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import com.application.latihan1.databinding.DashboardBinding
 
 class Dashboard: AppCompatActivity() {
 
-    private lateinit var sign_in: Button
-    private lateinit var sign_up: Button
-
-    fun initComponen(){
-        sign_in= findViewById(R.id.sign_in)
-        sign_up = findViewById(R.id.sign_up)
-    }
-
+    private lateinit var binding : DashboardBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.dashboard)
-        Log.e("passing", "masuk di main")
-        initComponen()
 
-        sign_in.setOnClickListener( View.OnClickListener {
-            val activity_signin = Intent(this, AuthActivity::class.java)
-            startActivity(activity_signin)
-        })
+        binding = DashboardBinding.inflate(layoutInflater)
 
-        sign_up.setOnClickListener( View.OnClickListener {
-            val activity_signin = Intent(this, AuthActivity::class.java)
-            startActivity(activity_signin)
-        })
+        setContentView(binding.root)
+
+        val navController = findNavController(R.id.nav_fragment_main)
 
     }
 }

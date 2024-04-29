@@ -2,8 +2,21 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/nav_auth_signin"
+    app:startDestination="@id/nav_dashboard"
     android:id="@+id/auth_navigation">
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard"
+        android:name="com.application.latihan1.ui.auth.DashboardFragment">
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_auth_signup"
+            app:destination="@id/nav_auth_signup" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_auth_signin2"
+            app:destination="@id/nav_auth_signin" />
+    </fragment>
+
     <fragment
         android:id="@+id/nav_auth_signin"
         android:label="@string/sign_in"
